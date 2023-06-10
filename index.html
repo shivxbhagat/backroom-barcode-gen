@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <input type="text" id="text" placeholder="999/999/999" />
+            <svg id="barcode"></svg>
+            <button id="btn" class="button">Generate</button>
+        </div>
+    </section>
+
+    <footer class="text-gray-600 body-font footer">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            
+            <p class="text-sm text-gray-500 mt-4">
+                © 2023 Barcode Generator —
+                <a href="https://github.com/shivxbhagat" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@shivxbhagat</a>
+            </p>
+        
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
