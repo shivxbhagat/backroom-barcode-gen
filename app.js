@@ -2,7 +2,7 @@ const generateBarcode = () => {
   let text = document.getElementById("text").value;
 
   if (text.trim().length === 0) {
-    alert("Please enter a valid text.");
+    alert("Please enter a valid backroom bin number.");
     return;
   }
 
