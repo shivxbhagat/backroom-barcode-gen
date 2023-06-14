@@ -1,14 +1,13 @@
 
-  body {
-    background-color: rgb(243, 243, 244)
-  }
-
-  section{
-    height: 97%;
+body {
+    background-color: rgb(243, 243, 244);
   }
 
 .container {
     text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
     margin-top: 50px;
   }
   
@@ -23,8 +22,8 @@
     width: 300px;
     margin: 30px auto;
     background-color: white;
-    
   }
+
   .button {
     padding: 10px 20px;
     font-size: 16px;
@@ -32,13 +31,28 @@
     color: white;
     border: none;
     cursor: pointer;
+
   }
 
-  footer {
-    height: 3%;
-  }
 
-  .footer{
-    margin: 0 auto;
+  #footer{
+    left: 0;
+    bottom: 0;
+    margin-top: 10%;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+
   }
   
+  .footer-text{
+    margin: auto;
+    color:  rgb(151, 151, 157);
+    display: inline-block;
+  }
+
+  .footer-a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+  }
