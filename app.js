@@ -1,9 +1,14 @@
+const checkInput = () => {
+	const input = document.getElementById("text");
+	if (input.value.length === 3 || input.value.length === 7) {
+		input.value += "/";
+	}
+};
+
 const generateBarcode = () => {
 	let text = document.getElementById("text").value;
-
 	if (text.trim().length === 0) {
-		alert("Please enter a valid backroom bin number.");
-		return;
+		text = "999/999/999";
 	}
 
 	let numbers = text.split("/");
@@ -33,6 +38,8 @@ const generateBarcode = () => {
 		displayValue: true,
 		text: text,
 	});
+
+	document.getElementById("text").value = "";
 };
 
 const clearAll = () => {
@@ -41,3 +48,4 @@ const clearAll = () => {
 };
 
 document.getElementById("btn").addEventListener("click", generateBarcode);
+document.getElementById("text").addEventListener("input", checkInput);
