@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
 
-<head>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+	<body>
+		<section>
+			<div class="container">
+				<input type="text" id="text" placeholder="999/999/999" />
+				<svg id="barcode"></svg>
+				<button id="btn" class="button">Generate</button>
+			</div>
+		</section>
 
-<body>
-    <section>
-        <div class="container">
-            <input type="text" id="text" placeholder="999/999/999" />
-            <svg id="barcode"></svg>
-            <button id="btn" class="button">Generate</button>
-        </div>
-    </section>
+		<footer id="footer">
+			<div>
+				<p class="footer-text">
+					Used
+					<a
+						href="https://lindell.me/JsBarcode/"
+						class="footer-a"
+						target="_blank"
+						>JsBarcode</a
+					>
+					Library to generate the barcode.
+				</p>
+				<br />
+				<p class="footer-text">
+					Vizpick Backroom Bin Barcode Generator —
+					<a
+						href="https://github.com/shivxbhagat"
+						class="footer-a"
+						target="_blank"
+						>@shivxbhagat</a
+					>
+				</p>
+			</div>
+		</footer>
 
-    <footer id="footer">
-        <div>
-            <p class="footer-text">
-                Used <a href="https://lindell.me/JsBarcode/" class="footer-a" 
-                target="_blank">JsBarcode</a> Library to generate the barcode.
-            </p>
-            <br>
-            <p class="footer-text">
-                Vizpick Backroom Bin Barcode Generator —
-                <a href="https://github.com/shivxbhagat" class="footer-a" 
-                    target="_blank">@shivxbhagat</a>
-            </p>
-        
-        </div>
-    </footer>
-
-    <script src="./app.js"></script>
-</body>
-
+		<script src="./app.js"></script>
+	</body>
 </html>
