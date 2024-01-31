@@ -1,3 +1,5 @@
+"use strict";
+
 const generateBarcode = () => {
 	let text = document.getElementById("text").value;
 	if (text.trim().length === 0) {
