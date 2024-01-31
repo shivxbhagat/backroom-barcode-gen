@@ -9,6 +9,7 @@ const generateBarcode = () => {
 	let numbers = text.split("/");
 
 	if (
+		text.length !== 11 ||
 		numbers[0].length !== 3 ||
 		numbers[1].length !== 3 ||
 		numbers[2].length !== 3 ||
