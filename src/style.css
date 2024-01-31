@@ -1276,18 +1276,6 @@ select {
   text-decoration-line: underline;
 }
 
-.underline-offset-1 {
-  text-underline-offset: 1px;
-}
-
-.underline-offset-2 {
-  text-underline-offset: 2px;
-}
-
-.underline-offset-auto {
-  text-underline-offset: auto;
-}
-
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -1431,9 +1419,14 @@ body {
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
 
-.focus\:ring-indigo-600:focus {
+.focus\:ring-slate-600:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(71 85 105 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-slate-800:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 41 59 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-opacity-50:focus {
