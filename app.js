@@ -32,7 +32,7 @@ const generateBarcode = () => {
 		text: text,
 	});
 
-	document.getElementById("text").value = "";
+	// document.getElementById("text").value = "";
 };
 
 const clearAll = () => {
