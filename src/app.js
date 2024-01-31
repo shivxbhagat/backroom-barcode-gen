@@ -48,7 +48,6 @@ const input = document.querySelector("#text");
 input.addEventListener("keyup", (event) => {
 	if (event.keyCode === 13) {
 		generateBarcode();
-		event.preventDefault();
 	}
 });
 
