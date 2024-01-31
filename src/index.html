@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Barcode Generator</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
+	</head>
+
+	<body>
+		<!-- older code 
+		<section>
+			<div class="container">
+				<input
+					type="text"
+					id="text"
+					placeholder="999/999/999"
+					maxlength="11"
+				/>
+				<svg id="barcode"></svg>
+				<button id="btn" class="button">Generate</button>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div>
+				<p class="footer-text">
+					Used
+					<a
+						href="https://lindell.me/JsBarcode/"
+						class="footer-a"
+						target="_blank"
+						>JsBarcode</a
+					>
+					Library to generate the barcode.
+				</p>
+				<br />
+				<p class="footer-text">
+					Walmart's Backroom Bin Barcode Generator —
+					<a
+						href="https://github.com/shivxbhagat"
+						class="footer-a"
+						target="_blank"
+						>@shivxbhagat</a
+					>
+				</p>
+			</div>
+		</footer>
+		-->
+		<div class="mt-10">
+			<!-- heading with "Backroom Barcode Generator" at the botoom "(only Bins with XXX/XXX/999)" -->
+			<h1 class="text-4xl text-center">Barcode Generator</h1>
+			<h2 class="text-xs text-center">(only Bins with XXX/XXX/999)</h2>
+		</div>
+		<div>
+			<div>
+				<label
+					class="block w-72 max-w-72 mx-auto text-sm mt-10 font-medium leading-6 text-gray-900"
+					>Enter the bin #:</label
+				>
+				<div class="relative mt-0.5 rounded-md">
+					<div
+						class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+					></div>
+					<input
+						type="text"
+						name="binNumber"
+						id="text"
+						class="block w-72 max-w-72 mx-auto rounded-md border-0 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+						placeholder="999/999/999"
+						maxlength="11"
+					/>
+					<svg id="barcode"></svg>
+					<button
+						id="btn"
+						class="block mx-auto mt-5 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-500 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 button"
+					>
+						Generate
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- footer with my name, my github link and copytright thing -->
+		<footer class="mt-20 mb-0">
+			<p class="text-center text-sm">
+				Used
+				<a href="" class="text-grey-600"><b>JsBarcode</b></a>
+				Library to generate the barcode,
+				<br />
+				<a href="" class="text-grey-600"><b>TailWind-CSS</b></a>
+				for the simple UI
+			</p>
+			<p class="text-center text-sm/[2rem]">
+				Coded by
+				<a
+					href="https://github.com/shivxbhagat"
+					class="text-gret-600"
+					target="_blank"
+					><b>@shivxbhagat</b></a
+				>
+			</p>
+		</footer>
+
+		<script src="./app.js"></script>
+	</body>
+</html>

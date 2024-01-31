@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: rgb(242, 241, 242);
+}
+
+#barcode {
+	width: 300px;
+	height: 150px;
+	margin: 30px auto;
+	background-color: white;
+}
