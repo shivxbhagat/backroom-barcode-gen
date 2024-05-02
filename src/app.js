@@ -33,8 +33,6 @@ const generateBarcode = () => {
 		displayValue: true,
 		text: text,
 	});
-
-	// document.getElementById("text").value = "";
 };
 
 const clearAll = () => {
